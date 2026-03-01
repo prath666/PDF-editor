@@ -244,7 +244,6 @@ function AnnotateScreen({ onBack }) {
     const [toolMode, setToolMode] = useState("select");
 
     // Drawing state
-    const drawCanvasRef = useRef(null);
     const [drawings, setDrawings] = useState([]); // { page, paths: [{x,y}], color, width }
     const [isDrawing, setIsDrawing] = useState(false);
     const [currentPath, setCurrentPath] = useState([]);
